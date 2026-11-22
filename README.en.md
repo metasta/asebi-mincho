@@ -22,7 +22,9 @@ Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 021
 
 ### Contextual forms and variation sequences
 
-辯, 辨, and 瓣 are distinct kanji that share the form 弁 in modern Japanese. When the OpenType `calt` feature is enabled, 雄弁, 弁別, and 花弁 are displayed as 雄辯, 辨別, and 花瓣, respectively. Ideographic variation sequences (IVS) can also select a specific form for supported characters.
+辯, 辨, and 瓣 are distinct kanji that share the form 弁 in modern Japanese. When the OpenType `calt` feature is enabled, 雄弁, 弁別, and 花弁 are displayed as 雄辯, 辨別, and 花瓣, respectively.
+
+On its own, 弁 normally appears as 辯. To display the form 弁 itself in an app that supports ideographic variation sequences (IVS), enter `弁󠄀` (弁 followed by U+E0100). Asebi Mincho provides this option for the 17 sequences listed in the technical documentation.
 
 ## Technical documentation
 
