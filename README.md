@@ -1,33 +1,42 @@
-# 馬酔木明朝 2 / Asebi Mincho 2
+# 馬酔木明朝 / Asebi Mincho
 
-馬酔木（あせび）明朝 2は、日本語の漢字を旧字形で表示する明朝体です。漢字は一点明朝正字を基準とし、かな・約物・欧文の主な素材は錦明朝です。
+[English](README.en.md)
 
-[配布先の GitHub Releases](https://github.com/metasta/asebi-mincho/releases)
+馬酔木（あせび）明朝は、一点明朝正字の基準に沿った字形で日本語を組むための明朝体です。
 
-![馬酔木明朝 2の書体見本。横組みは雨の後の窓、縦組みは古本から落ちる花。文脈による字形の例は雄辯・辨別・花瓣。](asebi-specimen.png)
+[フォントをダウンロード](https://github.com/metasta/asebi-mincho/releases)
 
-## 収録範囲
-
-漢字11,810字を収録します。対象はJIS X 0213の第1〜第4水準、Unicodeの互換漢字2ブロック、青空文庫でUnicode符号位置が明記された外字です。複数の範囲に属する字は1字分です。配布ZIPの `収録漢字.txt` で確認できます。「𛀀」（ア行）と「𛀁」（ヤ行）も収録します。
+![馬酔木明朝の書体見本。横組みは雨の後の窓、縦組みは古本から落ちる花。文脈による字形の例は雄辯・辨別・花瓣。](asebi-specimen.png)
 
 ## 利用方法
 
-配布ZIPを展開し、`AsebiMincho2-Light.otf` をインストールします。Wordなどのアプリでは「馬酔木明朝 2」または「Asebi Mincho 2」を選びます。ウェイトはLightです。旧版の馬酔木明朝と併用できます。
+配布ZIPを展開し、`AsebiMincho2-Light.otf` をインストールします。アプリのフォントメニューで「馬酔木明朝 2」または「Asebi Mincho 2」を選びます。旧版と併用するため、メニュー上の登録名には「2」が付きます。ウェイトはLightです。
 
-### 文脈による同形異字の区別
+## 旧版からの変更点
 
-「辯」「辨」「瓣」は、今の表記では同じ「弁」と書く別の漢字です。文脈による字形選択に対応する組版環境では、「雄弁」「弁別」「花弁」を、それぞれ「雄辯」「辨別」「花瓣」の字形で表示します。コピーや検索は、入力した文字コードに基づきます。「弁」の直後に異体字セレクタ U+E0100 を入力すると、「弁」の字形を指定できます。
+### 字形の基準
 
-### 旧版からの字形の変更
+旧版は『角川 新字源』を基準とした旧字明朝です。新版は、字源や日本語での用法を考慮する一点明朝正字の基準を採用した正字明朝です。「校」「文」では、右下へ伸びる画の始めにあった小さな跳ねを省きました。 [旧版の解説](https://metasta.github.io/asebi/)・[一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
-旧版の「校」「文」では、右下へ伸びる画の起筆に小さな跳ねがありました。新版では字形基準に従って、この跳ねを省きました。 [一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)・[旧版のサイト](https://metasta.github.io/asebi/)
+バージョン2.000は、JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字注記に由来する漢字を計11,810字収録します。
 
-### 縦組みでの三点リーダ
+### 複数の正字を持つ漢字への対応
 
-Mac版Wordなどでは、横組み用の字形が回転し、縦組みの三点リーダ `…`（U+2026）が行の中央より左に寄る場合があります。中央に配置するには、縦組み用の互換文字 `︙`（U+FE19）を入力します。2字続ける場合は `︙︙` と入力します。 [Unicodeの縦組み三点リーダの説明](https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/)
+「辯」「辨」「瓣」は、今の表記では同じ「弁」と書く別の漢字です。OpenTypeの `calt` が有効な組版環境では、「雄弁・弁別・花弁」を「雄辯・辨別・花瓣」の字形で表示します。異体字シーケンス（IVS）で、対応する字形を個別に指定することもできます。
+
+## 技術資料
+
+- [漢字の収録範囲と青空文庫の外字](docs/coverage.md)
+- [漢字の選定基準と一点明朝正字との字形差](docs/glyph-differences.md)
+- [文脈による字形選択と異体字シーケンス](docs/contextual-forms.md)
+- [既知の不具合と対処法](docs/known-issues.md)
 
 ## 使用許諾と素材
 
-馬酔木明朝 2は、IPAフォントライセンスv1.0に従って配布します。配布ZIPには、フォントの著作権表示、素材の詳細、再加工用のOpenTypeテーブル（TTX）、原版へ戻す手順が含まれます。 [ライセンス原文](IPA_Font_License_Agreement_v1.0.txt)
+馬酔木明朝はIPAフォントライセンスv1.0で配布します。配布ZIPには、各素材の著作権表示、原版へ戻す手順、再加工用のOpenTypeテーブル（TTX）が含まれます。 [ライセンス原文](IPA_Font_License_Agreement_v1.0.txt)
 
-漢字の基準と輪郭は一点明朝正字 v1.1、かな・約物・欧文の主な素材は錦明朝 1.111です。一部に三番明朝 1.001とIPAmj明朝 006.01も採用しました。派生版に関する質問は、このリポジトリのIssuesで受け付けます。 [一点明朝正字](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)・[錦明朝](https://www.akenotsuki.com/eyeben/fonts/nishiki.html)・[三番明朝](https://www.akenotsuki.com/eyeben/fonts/sammin.html)・[IPAmj明朝](https://moji.or.jp/mojikiban/font/)
+漢字の主な素材は一点明朝正字 v1.1、かな・約物・欧文の主な素材は錦明朝 1.111です。一部に三番明朝 1.001とIPAmj明朝 006.01も採用しました。 [一点明朝正字](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)・[三番明朝](https://www.akenotsuki.com/eyeben/fonts/sammin.html)・[IPAmj明朝](https://moji.or.jp/mojikiban/font/)
+
+錦明朝 1.111には独自のライセンスが適用されます。最終版の錦明朝 3.000はSIL Open Font License 1.1で配布されました。 [錦明朝 3.000の配布条件](https://www.akenotsuki.com/eyeben/fonts/nishiki.html)
+
+馬酔木明朝に関する質問や不具合の報告は、GitHub Issuesで受け付けます。 [Issues](https://github.com/metasta/asebi-mincho/issues)
