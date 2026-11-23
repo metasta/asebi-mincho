@@ -6,8 +6,6 @@ Asebi Mincho is a Japanese serif typeface that follows I.Ming Seiji’s criteria
 
 [Download the font](https://github.com/metasta/asebi-mincho/releases)
 
-![Asebi Mincho specimen. The horizontal sample describes a window after the rain. The vertical sample describes a flower falling from an old book. The contextual forms shown are 雄辯, 辨別, and 花瓣.](asebi-specimen.png)
-
 ## Installation
 
 Extract the release ZIP and install `AsebiMincho2-Light.otf`. Choose **Asebi Mincho 2** or **馬酔木明朝 2** from your app’s font menu. The **2** in the menu name allows this edition to be installed alongside the previous one. The font comes in a Light weight.
@@ -32,7 +30,7 @@ Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 021
 
 If a line break separates the characters needed by a rule, some apps may skip that rule. As a result, even automatic wrapping due to changes in window width or text size can affect the displayed form.
 
-To display 灯 in the sense of “lamplight,” or 余 or 予 as first-person pronouns, enter `灯󠄀`, `余󠄀`, or `予󠄀` in an app that supports ideographic variation sequences (IVS). In each sequence, U+E0100 follows the kanji. Asebi Mincho provides this option for the 17 sequences listed in the reference table. [Contextual rules and IVS reference (Japanese)](docs/contextual-forms.md)
+To retain the forms 余 and 予 when used as first-person pronouns, enter `余󠄀` or `予󠄀` in an app that supports ideographic variation sequences (IVS). In each sequence, U+E0100 follows the kanji. Asebi Mincho provides this option for the 17 sequences listed in the reference table. [Contextual rules and IVS reference (Japanese)](docs/contextual-forms.md)
 
 ## Technical documentation
 
