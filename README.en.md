@@ -8,7 +8,7 @@ Asebi Mincho is a Japanese serif typeface for setting text in traditional kanji 
 
 ![Horizontal text from Ten Nights of Dreams and vertical text from Tangled Hair, both with ruby readings](asebi-specimen.png)
 
-Both excerpts and their ruby readings use historical kana spelling. [Natsume Sōseki, Ten Nights of Dreams, First Night (horizontal)](https://www.aozora.gr.jp/cards/000148/files/799_14972.html) · [Yosano Akiko, Tangled Hair (vertical)](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
+[Natsume Sōseki, Ten Nights of Dreams, First Night (horizontal)](https://www.aozora.gr.jp/cards/000148/files/799_14972.html) · [Yosano Akiko, Tangled Hair (vertical)](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
 
 ## Installation
 
@@ -26,7 +26,7 @@ Safari on macOS offers a user style sheet setting under Advanced. Its settings d
 
 This edition takes most of its kanji glyphs directly from I.Ming Seiji v1.1. When adding kanji or changing glyphs, it follows the same selection criteria, which consider character origins and Japanese usage. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
-The previous edition selected traditional kanji forms using Kadokawa’s *Shinjigen* dictionary. In this edition, the small hook at the start of the downward-right stroke in 校 and 文 has been removed. [Previous edition](https://metasta.github.io/asebi/)
+The previous edition selected traditional kanji forms using Kadokawa’s *Shinjigen* dictionary. Under the I.Ming Seiji criteria, this edition adopts forms that omit decorative strokes found in traditional Mincho printing type. For example, this removes the small hook at the start of the right-falling stroke in 校 and 文. [Previous edition](https://metasta.github.io/asebi/)
 
 Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for characters outside JIS X 0208.
 

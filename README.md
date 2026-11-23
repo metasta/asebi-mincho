@@ -8,7 +8,7 @@
 
 ![『夢十夜』の横組みと『みだれ髪』の縦組みを総ルビで組んだ見本](asebi-specimen.png)
 
-引用本文とルビは歴史的仮名遣で組版しました。 [夏目漱石『夢十夜』第一夜（横組み）](https://www.aozora.gr.jp/cards/000148/files/799_14972.html)・[与謝野晶子『みだれ髪』（縦組み）](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
+[夏目漱石『夢十夜』第一夜（横組み）](https://www.aozora.gr.jp/cards/000148/files/799_14972.html)・[与謝野晶子『みだれ髪』（縦組み）](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
 
 ## 利用方法
 
@@ -26,7 +26,7 @@ macOS版Safariの設定には、既定フォントを選ぶ項目がありませ
 
 新版では、漢字の大部分に一点明朝正字 v1.1 の字形をそのまま収録しました。補完した漢字や字形を変更した漢字にも、字の成り立ちと日本語での用法を確かめる同じ基準を適用しました。 [一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)・[字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
-旧版は『角川 新字源』を基準とした旧字明朝です。新版の「校」「文」では、右下へ伸びる画の始めにあった小さな跳ねを省きました。 [旧版の解説](https://metasta.github.io/asebi/)
+旧版は『角川 新字源』を基準とした旧字明朝です。新版では、一点明朝正字の基準に基づき、明朝体の活字に見られる伝統的な装飾筆画を省いた字形を採用しました。たとえば「校」や「文」では、右下へ伸びる画の始めにあった小さな突起がなくなりました。 [旧版の解説](https://metasta.github.io/asebi/)
 
 バージョン2.000は、JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字注記に由来する漢字を計11,810字収録します。
 
