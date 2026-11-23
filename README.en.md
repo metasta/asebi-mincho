@@ -12,6 +12,12 @@ Asebi Mincho is a Japanese serif typeface that follows I.Ming Seiji’s criteria
 
 Extract the release ZIP and install `AsebiMincho2-Light.otf`. Choose **Asebi Mincho 2** or **馬酔木明朝 2** from your app’s font menu. The **2** in the menu name allows this edition to be installed alongside the previous one. The font comes in a Light weight.
 
+### Web browsers
+
+Chrome and Firefox let you select an installed font as the browser default. This applies where the page relies on browser defaults. Site-specific font choices may still apply. [Chrome settings](https://support.google.com/chrome/answer/96810?hl=en) · [Firefox settings](https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use)
+
+Safari on macOS offers a user style sheet setting under Advanced. Its settings do not include a default font picker. Safari’s privacy protections can also limit access to installed fonts from web pages. [Safari settings](https://support.apple.com/en-ie/guide/safari/ibrw1075/mac) · [WebKit’s tracking prevention](https://webkit.org/tracking-prevention/)
+
 ## Changes from the previous edition
 
 ### Kanji selection
@@ -24,7 +30,9 @@ Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 021
 
 辯, 辨, and 瓣 are distinct kanji that share the form 弁 in modern Japanese. When the OpenType `calt` feature is enabled, 雄弁, 弁別, and 花弁 are displayed as 雄辯, 辨別, and 花瓣, respectively.
 
-On its own, 弁 normally appears as 辯. To display the form 弁 itself in an app that supports ideographic variation sequences (IVS), enter `弁󠄀` (弁 followed by U+E0100). Asebi Mincho provides this option for the 17 sequences listed in the technical documentation.
+If a line break separates the characters needed by a rule, some apps may skip that rule. As a result, even automatic wrapping due to changes in window width or text size can affect the displayed form.
+
+To display 灯 in the sense of “lamplight,” or 余 or 予 as first-person pronouns, enter `灯󠄀`, `余󠄀`, or `予󠄀` in an app that supports ideographic variation sequences (IVS). In each sequence, U+E0100 follows the kanji. Asebi Mincho provides this option for the 17 sequences listed in the reference table. [Contextual rules and IVS reference (Japanese)](docs/contextual-forms.md)
 
 ## Technical documentation
 
