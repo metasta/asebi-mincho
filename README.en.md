@@ -2,9 +2,13 @@
 
 [日本語](README.md)
 
-Asebi Mincho is a Japanese serif typeface that follows I.Ming Seiji’s criteria for selecting kanji forms.
+Asebi Mincho is a Japanese serif typeface for setting text in traditional kanji forms.
 
 [Download the font](https://github.com/metasta/asebi-mincho/releases)
+
+![Horizontal text from Ten Nights of Dreams and vertical text from Tangled Hair, both with ruby readings](asebi-specimen.png)
+
+Both excerpts and their ruby readings use historical kana spelling. [Natsume Sōseki, Ten Nights of Dreams, First Night (horizontal)](https://www.aozora.gr.jp/cards/000148/files/799_14972.html) · [Yosano Akiko, Tangled Hair (vertical)](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
 
 ## Installation
 
@@ -20,7 +24,9 @@ Safari on macOS offers a user style sheet setting under Advanced. Its settings d
 
 ### Kanji selection
 
-The previous edition selected traditional kanji forms using Kadokawa’s *Shinjigen* dictionary. This edition follows I.Ming Seiji’s criteria, which take character origins and Japanese usage into account. For example, the small hook at the start of the downward-right stroke in 校 and 文 has been removed. [Previous edition](https://metasta.github.io/asebi/) · [I.Ming Seiji selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
+This edition takes most of its kanji glyphs directly from I.Ming Seiji v1.1. When adding kanji or changing glyphs, it follows the same selection criteria, which consider character origins and Japanese usage. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
+
+The previous edition selected traditional kanji forms using Kadokawa’s *Shinjigen* dictionary. In this edition, the small hook at the start of the downward-right stroke in 校 and 文 has been removed. [Previous edition](https://metasta.github.io/asebi/)
 
 Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for characters outside JIS X 0208.
 
@@ -45,7 +51,7 @@ The following documents are in Japanese.
 
 Asebi Mincho is distributed under the IPA Font License Agreement v1.0. The release ZIP includes copyright notices for the source fonts, instructions for reverting to the original typefaces, and editable OpenType table data in TTX format. [License text](IPA_Font_License_Agreement_v1.0.txt)
 
-I.Ming Seiji v1.1 is the main source for kanji. Nishiki Mincho 1.111 is the main source for kana, punctuation, and Latin characters, with additional material from Sanban Mincho 1.001 and IPAmj Mincho 006.01. [I.Ming Seiji](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Sanban Mincho](https://www.akenotsuki.com/eyeben/fonts/sammin.html) · [IPAmj Mincho](https://moji.or.jp/mojikiban/font/)
+Nishiki Mincho 1.111 is the main source for kana, punctuation, and Latin characters, with additional material from Sanban Mincho 1.001 and IPAmj Mincho 006.01. [Sanban Mincho](https://www.akenotsuki.com/eyeben/fonts/sammin.html) · [IPAmj Mincho](https://moji.or.jp/mojikiban/font/)
 
 Nishiki Mincho 1.111 was distributed under its own license. The final release, Nishiki Mincho 3.000, was distributed under the SIL Open Font License 1.1. [Nishiki Mincho 3.000 license information](https://www.akenotsuki.com/eyeben/fonts/nishiki.html)
 

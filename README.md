@@ -2,9 +2,13 @@
 
 [English](README.en.md)
 
-馬酔木（あせび）明朝は、一点明朝正字の基準に沿った字形で日本語を組むための明朝体です。
+馬酔木（あせび）明朝は、日本語を正字で組むための明朝体です。
 
 [フォントをダウンロード](https://github.com/metasta/asebi-mincho/releases)
+
+![『夢十夜』の横組みと『みだれ髪』の縦組みを総ルビで組んだ見本](asebi-specimen.png)
+
+引用本文とルビは歴史的仮名遣で組版しました。 [夏目漱石『夢十夜』第一夜（横組み）](https://www.aozora.gr.jp/cards/000148/files/799_14972.html)・[与謝野晶子『みだれ髪』（縦組み）](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
 
 ## 利用方法
 
@@ -20,7 +24,9 @@ macOS版Safariの設定には、既定フォントを選ぶ項目がありませ
 
 ### 字形の基準
 
-旧版は『角川 新字源』を基準とした旧字明朝です。新版は、字源や日本語での用法を考慮する一点明朝正字の基準を採用した正字明朝です。「校」「文」では、右下へ伸びる画の始めにあった小さな跳ねを省きました。 [旧版の解説](https://metasta.github.io/asebi/)・[一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)
+新版では、漢字の大部分に一点明朝正字 v1.1 の字形をそのまま収録しました。補完した漢字や字形を変更した漢字にも、字の成り立ちと日本語での用法を確かめる同じ基準を適用しました。 [一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)・[字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)
+
+旧版は『角川 新字源』を基準とした旧字明朝です。新版の「校」「文」では、右下へ伸びる画の始めにあった小さな跳ねを省きました。 [旧版の解説](https://metasta.github.io/asebi/)
 
 バージョン2.000は、JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字注記に由来する漢字を計11,810字収録します。
 
@@ -43,7 +49,7 @@ macOS版Safariの設定には、既定フォントを選ぶ項目がありませ
 
 馬酔木明朝はIPAフォントライセンスv1.0で配布します。配布ZIPには、各素材の著作権表示、原版へ戻す手順、再加工用のOpenTypeテーブル（TTX）が含まれます。 [ライセンス原文](IPA_Font_License_Agreement_v1.0.txt)
 
-漢字の主な素材は一点明朝正字 v1.1、かな・約物・欧文の主な素材は錦明朝 1.111です。一部に三番明朝 1.001とIPAmj明朝 006.01も採用しました。 [一点明朝正字](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)・[三番明朝](https://www.akenotsuki.com/eyeben/fonts/sammin.html)・[IPAmj明朝](https://moji.or.jp/mojikiban/font/)
+かな・約物・欧文の主な素材は錦明朝 1.111です。一部に三番明朝 1.001とIPAmj明朝 006.01も採用しました。 [三番明朝](https://www.akenotsuki.com/eyeben/fonts/sammin.html)・[IPAmj明朝](https://moji.or.jp/mojikiban/font/)
 
 錦明朝 1.111には独自のライセンスが適用されます。最終版の錦明朝 3.000はSIL Open Font License 1.1で配布されました。 [錦明朝 3.000の配布条件](https://www.akenotsuki.com/eyeben/fonts/nishiki.html)
 
