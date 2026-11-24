@@ -8,35 +8,39 @@ Asebi Mincho is a Japanese serif typeface for setting text in traditional kanji 
 
 ![Horizontal text from Ten Nights of Dreams and vertical text from Tangled Hair, both with ruby readings](asebi-specimen.png)
 
-[Natsume Sōseki, Ten Nights of Dreams, First Night (horizontal)](https://www.aozora.gr.jp/cards/000148/files/799_14972.html) · [Yosano Akiko, Tangled Hair (vertical)](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
+[Natsume Sōseki, Ten Nights of Dreams, First Night](https://www.aozora.gr.jp/cards/000148/files/799_14972.html) · [Yosano Akiko, Tangled Hair](https://www.aozora.gr.jp/cards/000885/files/51307_47033.html)
 
 ## Installation
 
-Extract the release ZIP and install `AsebiMincho2-Light.otf`. Choose **Asebi Mincho 2** or **馬酔木明朝 2** from your app’s font menu. The **2** in the menu name allows this edition to be installed alongside the previous one. The font comes in a Light weight.
+Extract the release ZIP and install `AsebiMincho2-Light.otf`. The family name is **Asebi Mincho 2** in English and **馬酔木明朝 2** in Japanese. The PostScript name is `AsebiMincho2-Light`, and the weight is Light. You can install this edition alongside the previous one.
 
-### Web browsers
+Set Asebi Mincho as your browser’s default font to use it wherever a site relies on that default. In browsers without a default font picker, such as Safari on macOS, a user style sheet may let you apply the font.
 
-Chrome and Firefox let you select an installed font as the browser default. This applies where the page relies on browser defaults. Site-specific font choices may still apply. [Chrome settings](https://support.google.com/chrome/answer/96810?hl=en) · [Firefox settings](https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use)
-
-Safari on macOS offers a user style sheet setting under Advanced. Its settings do not include a default font picker. Safari’s privacy protections can also limit access to installed fonts from web pages. [Safari settings](https://support.apple.com/en-ie/guide/safari/ibrw1075/mac) · [WebKit’s tracking prevention](https://webkit.org/tracking-prevention/)
+[Chrome settings](https://support.google.com/chrome/answer/96810?hl=en) · [Firefox settings](https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use) · [Safari settings](https://support.apple.com/en-ie/guide/safari/ibrw1075/mac) · [WebKit’s tracking prevention](https://webkit.org/tracking-prevention/)
 
 ## Changes from the previous edition
 
-### Kanji selection
+### Kanji coverage and glyph selection
 
-This edition takes most of its kanji glyphs directly from I.Ming Seiji v1.1. When adding kanji or changing glyphs, it follows the same selection criteria, which consider character origins and Japanese usage. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
+Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for kanji outside JIS X 0208.
 
-The previous edition selected traditional kanji forms using Kadokawa’s *Shinjigen* dictionary. Under the I.Ming Seiji criteria, this edition adopts forms that omit decorative strokes found in traditional Mincho printing type. For example, this removes the small hook at the start of the right-falling stroke in 校 and 文. [Previous edition](https://metasta.github.io/asebi/)
+Most kanji in this edition use glyphs from I.Ming Seiji v1.1. This edition applies the same selection criteria to kanji absent from that font and to kanji whose original checks against sources could not be confirmed. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
-Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for characters outside JIS X 0208.
+The previous edition selected traditional forms using Kadokawa’s *Shinjigen* dictionary. The new criteria base glyph selection on character origins. One visible change is the removal of some decorative details from traditional Mincho printing type, including the small hook at the start of the right-falling stroke in 文 and 校. [Previous edition](https://metasta.github.io/asebi/)
 
-### Contextual forms and variation sequences
+### Distinguishing kanji that share a modern form
 
-辯, 辨, and 瓣 are distinct kanji that share the form 弁 in modern Japanese. When the OpenType `calt` feature is enabled, 雄弁, 弁別, and 花弁 are displayed as 雄辯, 辨別, and 花瓣, respectively.
+#### Selecting forms with ideographic variation sequences
 
-If a line break separates the characters needed by a rule, some apps may skip that rule. As a result, even automatic wrapping due to changes in window width or text size can affect the displayed form.
+餘 (“remainder”) and 余 (a first-person pronoun) are distinct kanji that share the form 余 in modern Japanese. Asebi Mincho displays 余 as 餘 by default. To display the form 余 in an app that supports ideographic variation sequences (IVS), enter `余󠄀` (余, U+4F59, followed by variation selector U+E0100). This option covers 17 kanji, including 余, 予, 灯, and 芸.
 
-To retain the forms 余 and 予 when used as first-person pronouns, enter `余󠄀` or `予󠄀` in an app that supports ideographic variation sequences (IVS). In each sequence, U+E0100 follows the kanji. Asebi Mincho provides this option for the 17 sequences listed in the reference table. [Contextual rules and IVS reference (Japanese)](docs/contextual-forms.md)
+#### Selecting forms automatically from context
+
+辯, 辨, and 瓣 are distinct kanji that share the form 弁 in modern Japanese. 雄弁 appears as 雄辯 by default. With the OpenType `calt` feature enabled, 弁別 and 花弁 appear as 辨別 and 花瓣, respectively. The contextual rules cover 10 kanji, including 弁, 芸, 台, and 欠.
+
+These rules apply to the character sequences registered in the font. A line break within a sequence can prevent a rule from applying, even when the app inserts the break automatically. To get the intended forms regardless of line breaks, enter 雄辯, 辨別, or 花瓣 directly.
+
+[Contextual rules and IVS reference (Japanese)](docs/contextual-forms.md)
 
 ## Technical documentation
 
