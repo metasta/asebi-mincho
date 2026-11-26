@@ -22,7 +22,7 @@ Set Asebi Mincho as your browser’s default font to use it wherever a site reli
 
 ### Kanji coverage and glyph selection
 
-Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for kanji outside JIS X 0208.
+Version 2.001 covers 12,101 kanji in total. This includes levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks and their canonical equivalents, and kanji from Aozora Bunko’s annotations for characters outside JIS X 0208.
 
 Most kanji in this edition use glyphs from I.Ming Seiji v1.1. When adding or revising glyphs, this edition follows the published I.Ming Seiji selection criteria. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
@@ -47,7 +47,7 @@ These rules apply to the character sequences registered in the font. A line brea
 The following documents are in Japanese.
 
 - [Kanji coverage and Aozora Bunko character notes](docs/coverage.md)
-- [Kanji selection and glyph differences from I.Ming Seiji](docs/glyph-differences.md)
+- [Kanji glyph selection and review records](docs/glyph-differences.md)
 - [Contextual forms and ideographic variation sequences](docs/contextual-forms.md)
 - [Known issues and workarounds](docs/known-issues.md)
 

@@ -1,13 +1,14 @@
 # 漢字の収録範囲
 
-馬酔木明朝で表示したい漢字は、配布ZIPの `収録漢字.txt` で収録の有無を確認できます。2.000の収録漢字は11,810字です。表では、複数の範囲に共通するUnicodeの文字番号（符号位置）を1字とします。 [配布ZIPの入手先](https://github.com/metasta/asebi-mincho/releases)
+馬酔木明朝で表示したい漢字は、配布ZIPの `収録漢字.txt` で収録の有無を確認できます。2.001の収録漢字は12,101字です。表では、複数の範囲に共通するUnicodeの文字番号（符号位置）を1字とします。 [配布ZIPの入手先](https://github.com/metasta/asebi-mincho/releases)
 
 | 収録の根拠 | 範囲内の字数 | 上の行と重複しない字数 |
 | --- | ---: | ---: |
 | JIS X 0213:2004の第1〜第4水準 | 10,050 | 10,050 |
 | UnicodeのCJK互換漢字・CJK互換漢字補助の2ブロック | 1,014 | 932 |
 | 青空文庫の外字注記からUnicode符号位置を特定した漢字 | 840 | 828 |
-| 合計 | | 11,810 |
+| 互換漢字の正準対応先 | 902 | 291 |
+| 合計 | | 12,101 |
 
 ## JIS X 0213:2004
 
@@ -17,7 +18,7 @@
 
 Unicodeの「CJK互換漢字」（U+F900–U+FAFF）と「CJK互換漢字補助」（U+2F800–U+2FA1F）に割り当てのある1,014字を、各符号位置で収録します。このうち1,002字には、Unicodeが同じ文字とみなす別の符号位置（正準対応先）があります。残る12字はCJK互換漢字ブロック内の統合漢字です。集計ではUnihan 18.0.0の `kCompatibilityVariant` を参照しました。 [Unicode規格の漢字の章](https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-18/)・[Unihanのプロパティ定義](https://www.unicode.org/reports/tr38/tr38-41.html#kCompatibilityVariant)
 
-互換漢字が表示できるかは、文書に保存された符号位置にもよります。正準対応先がある字は、Unicode正規化（NFCなど）を経ると、その対応先の符号位置に変換されます。馬酔木明朝にある「徚」（U+2F89C）は、正規化で「徚」（U+5F9A）になる例です。正準対応先のうち、「徚」を含む291字は2.000の収録範囲外で、表示には別のフォントが必要です。 [Unicode正規化仕様](https://www.unicode.org/reports/tr15/#Respecting_Canonical_Equivalence)・[互換漢字補助の符号表](https://www.unicode.org/Public/18.0.0/charts/nameslist/2f800/)
+正準対応先がある互換漢字は、Unicode正規化（NFCなど）を経ると、その対応先の符号位置に変換されます。「徚」（U+2F89C）が「徚」（U+5F9A）になるのが一例です。2.001では正準対応先902字をすべて収録し、各組で同じ既定の字形を表示します。 [Unicode正規化仕様](https://www.unicode.org/reports/tr15/#Respecting_Canonical_Equivalence)・[互換漢字補助の符号表](https://www.unicode.org/Public/18.0.0/charts/nameslist/2f800/)
 
 ## 青空文庫の外字
 

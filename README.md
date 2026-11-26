@@ -22,7 +22,7 @@ Webブラウザの既定フォントに馬酔木明朝を指定すると、サ�
 
 ### 収録範囲と字形の基準
 
-JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字注記に由来する漢字を計11,810字収録します。
+バージョン2.001では、JIS X 0213の第1〜第4水準、Unicodeの互換漢字とその正準対応先、青空文庫の外字注記に由来する漢字を計12,101字収録します。
 
 新版では、漢字に[一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)の字形を採用しました。字形の補完や変更には、[一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)を参照します。
 
@@ -45,7 +45,7 @@ JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字�
 ## 技術資料
 
 - [漢字の収録範囲と青空文庫の外字](docs/coverage.md)
-- [漢字の選定基準と一点明朝正字との字形差](docs/glyph-differences.md)
+- [漢字の字形選定と照合記録](docs/glyph-differences.md)
 - [文脈による字形選択と異体字シーケンス](docs/contextual-forms.md)
 - [既知の不具合と対処法](docs/known-issues.md)
 
