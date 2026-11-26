@@ -41,7 +41,9 @@
 
 ### 照合に基づく異体字の表示
 
-一点明朝正字の基準に基づき、字書と用例を照合して、異体字（同じ字を表す別の形）に当たるか、日本語で独自の意味や用法があるかを確認します。表示に採用する字形も、字の成り立ちと字書の記載をもとに、同じ基準で選びます。
+字書を照合し、異体字（同じ字を表す別の形）かを確認します。青空文庫などの本文も参照し、その箇所で表す字と意味を確かめます。表示を一つの形にまとめる場合は、字の成り立ちと字書の記載に基づき、字形を選びます。
+
+現代日本語で意味や用法が分化した場合や、別義の現用字との混同が生じる場合は、表記の区別を保ちます。「着」は「著」の俗字に由来し、後に「着用」「到着」などの表記に定着しました。一点明朝正字でも、両字の字形は別です。 [一点明朝正字 v1.1 の字形選定基準](https://github.com/epistularum/kanji-restoration/blob/v1.1/README.md#正字-criteria)・[『角川新字源』の「着」の成り立ち](https://www.kanjipedia.jp/kanji/0004715800)
 
 「䨇」の場合、『漢語大字典』は「雙」と同じ字とし、青空文庫『伊沢蘭軒』の「十䨇」も「十雙」の意味です。字形については、『教育部異體字字典』が「雙」を見出しとし、「隻」を二つ並べた「䨇」をその俗体と記します。この照合をもとに、二つの「隹」の下に「又」がある「雙」を正字として選び、一点明朝正字の字形を採用しました。「䨇」を入力したときの文字コードはそのままです。 [教育部異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=49110&la=1)・[青空文庫『伊沢蘭軒』](https://www.aozora.gr.jp/cards/000129/card2084.html)
 
@@ -109,7 +111,7 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 
 ## 次版で確定した字形
 
-次版の開発で確定した字形のうち、一点明朝正字の同じ符号位置、または正準対応先にある字形と異なるものを掲載します。表に正準対応先を示した組は、両方の文字コードを収録し、同じ既定字形で表示します。「採用字形」の字は、輪郭を参照した先を示します。 [一点明朝正字 v1.1 の字形選定基準](https://github.com/epistularum/kanji-restoration/blob/v1.1/README.md#正字-criteria)・[Unicode正規化仕様](https://www.unicode.org/reports/tr15/#Respecting_Canonical_Equivalence)
+次版の開発で確定した字形のうち、一点明朝正字の同じ符号位置、または正準対応先にある字形と異なるものを掲載します。表に正準対応先を示した組は、入力字と正準対応先を収録し、同じ既定字形で表示します。「採用字形」の字は、輪郭を参照した先を示します。 [一点明朝正字 v1.1 の字形選定基準](https://github.com/epistularum/kanji-restoration/blob/v1.1/README.md#正字-criteria)・[Unicode正規化仕様](https://www.unicode.org/reports/tr15/#Respecting_Canonical_Equivalence)
 
 | 入力字 | 正準対応先 | 採用字形 | 根拠 |
 | --- | --- | --- | --- |
@@ -117,6 +119,7 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 | 䞇（`U+4787`） | — | 贄 | 『漢語大詞典』は䞇を贄と同字とし、宋刊本『資治通鑑』には同一人物の「陸䞇」「陸贄」が見えます。 [漢語大詞典と用例](https://www.shidianguji.com/character/%E4%9E%87) |
 | 峀（`U+2F879`） | 峀（`U+5CC0`） | 岫 | 台湾原字の山＋由は岫の異体です。山＋田の形は別字の邦の古字に当たります。部品の配置差を本文用の形に統一する基準を適用し、推薦形體表の山偏＋由を採用しました。 [字源分離の資料](https://www.unicode.org/wg2/docs/n5259-IRGN2676Disunify5CC0.pdf)・[推薦形體表28頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/table_of_recom_inherited_glyphs-1.04.pdf#page=29) |
 | 𢆃（`U+2F889`） | 𢆃（`U+22183`） | 𢅼 | 『正字通』は𢆃を𢅼の俗字とします。『說文解字』が示す巾と声符の夒から成る𢅼を採用しました。 [漢語大字典871頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=871)・[說文解字・巾部](https://ctext.org/shuo-wen-jie-zi/jin-bu1/zh) |
+| 𢌱（`U+2F891`）・𢌱（`U+2F892`） | 𢌱（`U+22331`） | 與 | 『異體字字典』によると、𢌱は與の古文の楷書形です。一点明朝正字が回の古字「囘」に「回」の形を割り当てる例に基づき、與の字形を共用します。 [異體字字典の研訂](https://dict.variants.moe.edu.tw/dictView.jsp?ID=36903)・[一点明朝正字の「囘」の選定](https://github.com/epistularum/kanji-restoration/blob/v1.1/seiji.tsv#L3328) |
 | 㤜（`U+2F8A2`） | 㤜（`U+391C`） | 怴 | 『康熙字典』は㤜と怴を別項とします。『漢語大字典』は㤜を怴の訛字とし、同書所引の阮元校勘記は『公羊傳』の㤜を怴と校訂して、声符を戉と明記します。この校訂に基づき、忄＋戉を採用しました。 [康熙字典・怴](https://zh.wikisource.org/wiki/康熙字典/心部/五畫)・[漢語大字典2457頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=2457)・[阮元校勘記](https://www.donglishuzhai.net/chapter/10702.html) |
 | 㩬（`U+2F8C7`） | 㩬（`U+3A6C`） | 𢹍 | 『正字通』は打つ義の𢹍に対し、㩬を訛字とします。一点明朝正字の戱・戲の選定と同じく、右側は虍の下に豆を置く戲です。 [康熙字典・㩬](https://ctext.org/kangxi-zidian/64/16/zh)・[一点明朝正字の選定表](https://github.com/epistularum/kanji-restoration/blob/aa3004083e6304854425fe971ec6f9f43a03f9c1/seiji.tsv#L13201) |
 | 𣲼（`U+2F8FB`） | 𣲼（`U+23CBC`） | 厬 | 『集韻』は脇から出る泉の義で𣲼を厬の異体とします。『說文解字』の厂と声符の晷を含む厬を採用しました。 [異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=55008) |
