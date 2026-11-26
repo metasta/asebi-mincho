@@ -115,8 +115,11 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 
 | 入力字 | 正準対応先 | 採用字形 | 根拠 |
 | --- | --- | --- | --- |
+| 㖗（`U+3597`） | — | 崟 | 『漢語大字典』は険しい山を表す崟の訛字とし、『異體字字典』も崟の異体に挙げます。山と声符の金を含む崟を採用しました。 [漢語大字典680頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=680)・[異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=57125&la=0) |
 | 䙜（`U+465C`） | — | 𥛝 | 『漢語大字典』3313頁は衣偏の形を訛字とし、『玉篇』の示偏の形を挙げます。『十二支考』の神名「泰䙜」も『山海經』の「泰𥛝」に当たります。 [漢語大字典](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=3313)・[十二支考](https://www.aozora.gr.jp/cards/000093/files/526_28258.html) |
 | 䞇（`U+4787`） | — | 贄 | 『漢語大詞典』は䞇を贄と同字とし、宋刊本『資治通鑑』には同一人物の「陸䞇」「陸贄」が見えます。 [漢語大詞典と用例](https://www.shidianguji.com/character/%E4%9E%87) |
+| 䦧（`U+49A7`） | — | 鬩 | 『漢語大字典』はせめぐ義の鬩の外側が門に訛った形とします。『說文解字』が記す鬥＋兒の鬩を採用しました。 [漢語大字典4381頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=4381)・[異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=76386) |
+| 𩚚（`U+2969A`） | — | 𩚬 | 『玉篇』と『異體字字典』は飢餓の義で𩚚を𩚬と同字とします。『說文解字』の食と声符の戹を含む𩚬を採用しました。 [漢語大字典4732頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=4732)・[異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=109693) |
 | 峀（`U+2F879`） | 峀（`U+5CC0`） | 岫 | 台湾原字の山＋由は岫の異体です。山＋田の形は別字の邦の古字に当たります。部品の配置差を本文用の形に統一する基準を適用し、推薦形體表の山偏＋由を採用しました。 [字源分離の資料](https://www.unicode.org/wg2/docs/n5259-IRGN2676Disunify5CC0.pdf)・[推薦形體表28頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/table_of_recom_inherited_glyphs-1.04.pdf#page=29) |
 | 𢆃（`U+2F889`） | 𢆃（`U+22183`） | 𢅼 | 『正字通』は𢆃を𢅼の俗字とします。『說文解字』が示す巾と声符の夒から成る𢅼を採用しました。 [漢語大字典871頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=871)・[說文解字・巾部](https://ctext.org/shuo-wen-jie-zi/jin-bu1/zh) |
 | 𢌱（`U+2F891`）・𢌱（`U+2F892`） | 𢌱（`U+22331`） | 與 | 『異體字字典』によると、𢌱は與の古文の楷書形です。一点明朝正字が回の古字「囘」に「回」の形を割り当てる例に基づき、與の字形を共用します。 [異體字字典の研訂](https://dict.variants.moe.edu.tw/dictView.jsp?ID=36903)・[一点明朝正字の「囘」の選定](https://github.com/epistularum/kanji-restoration/blob/v1.1/seiji.tsv#L3328) |
@@ -129,3 +132,4 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 | 𠠄（`U+2F9D9`） | 𠠄（`U+20804`） | 㨄 | 『集韻』の直紹切は、刺す義で𠠄を㨄と同字とします。『周禮』注所引の『詩』にも手偏＋周の表記があります。 [康熙字典・𠠄](https://ctext.org/kangxi-zidian/18/14/zh)・[周禮正義・醢人](https://wk.100ke.info/zh-hant/周禮正義/74) |
 | 𨜮（`U+2F9E5`） | 𨜮（`U+2872E`） | 作字 | 『異體字字典』は同じ形を卿と鄉の双方の異体に挙げます。𨜮の構成を保ち、最上画を檢校表の横画にするため、卿の左端全体を移しました。 [卿の異体欄](https://dict.variants.moe.edu.tw/dictView.jsp?ID=4968)・[鄉の異体欄](https://dict.variants.moe.edu.tw/dictView.jsp?ID=46476)・[檢校表100頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/component_of_recom_inherited_glyphs-1.37.pdf#page=101) |
 | 䦕（`U+2F9EF`） | 䦕（`U+4995`） | 閛 | 『漢語大字典』は門が閉まる音を表す閛の異体に䦕を挙げます。檢校表の全字例に基づき、門の内側は左右に点を持つ平です。 [漢語大字典4376頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=4376)・[檢校表75頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/component_of_recom_inherited_glyphs-1.37.pdf#page=76) |
+| 䯎（`U+2FA08`） | 䯎（`U+4BCE`） | 骭 | 『漢語大字典』は、すねの義で䯎を骭と同字とします。教育部『異體字字典』も䯎を骭の異体に挙げます。両符号で骨＋干を共用します。 [漢語大字典4698頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=4698)・[異體字字典](https://dict.variants.moe.edu.tw/appendix.jsp?ID=3&page=691) |
