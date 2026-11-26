@@ -24,7 +24,7 @@ Set Asebi Mincho as your browser’s default font to use it wherever a site reli
 
 Version 2.000 covers 11,810 kanji in total, drawn from levels 1–4 of JIS X 0213, the two Unicode CJK Compatibility Ideographs blocks, and Aozora Bunko’s annotations for kanji outside JIS X 0208.
 
-Most kanji in this edition use glyphs from I.Ming Seiji v1.1. This edition applies the same selection criteria to kanji absent from that font and to kanji whose original checks against sources could not be confirmed. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
+Most kanji in this edition use glyphs from I.Ming Seiji v1.1. When adding or revising glyphs, this edition follows the published I.Ming Seiji selection criteria. [I.Ming Seiji v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1) · [Selection criteria](https://github.com/epistularum/kanji-restoration#正字-criteria)
 
 The previous edition selected traditional forms using Kadokawa’s *Shinjigen* dictionary. The new criteria base glyph selection on character origins. One visible change is the removal of some decorative details from traditional Mincho printing type, including the small hook at the start of the right-falling stroke in 文 and 校. [Previous edition](https://metasta.github.io/asebi/)
 

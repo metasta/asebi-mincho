@@ -24,7 +24,7 @@ Webブラウザの既定フォントに馬酔木明朝を指定すると、サ�
 
 JIS X 0213の第1〜第4水準、Unicodeの互換漢字、青空文庫の外字注記に由来する漢字を計11,810字収録します。
 
-新版では、漢字に[一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)の字形を採用しました。一部、一点明朝正字に未収録の字や、収録済みでも字源資料との照合を確認できない字については、[一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)により採用字形を定めました。
+新版では、漢字に[一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)の字形を採用しました。字形の補完や変更には、[一点明朝正字の字形選定基準](https://github.com/epistularum/kanji-restoration#正字-criteria)を参照します。
 
 この変更により、『角川 新字源』を基準とする「旧字明朝」であった[旧版](https://metasta.github.io/asebi/)に対し、新版は字の成り立ちに基づく「正字明朝」となり、いくつかの漢字で字形が変更されました。旧版で「文」や「校」にあった「ツメ（ヒゲ）」などの伝統的な装飾筆画も、新版では除かれた字形となりました。
 
