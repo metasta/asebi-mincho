@@ -95,6 +95,8 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 | 舁 | U+2F893 | 舁 | U+8201 |
 | 甾 | U+2F936 | 甾 | U+753E |
 
+一点明朝正字に互換漢字の符号位置がない場合は、同フォントの正準対応先の字形と比較できます。この比較で差がある2.000の61件は、[互換漢字の採用字形と根拠](compatibility-glyph-differences.md)に掲載します。
+
 ### 「弁」の通常の字形
 
 馬酔木明朝で「弁」（U+5F01）を単独で入力すると、通常は「辯」と表示します。「弁別」や「花弁」などの語での表示や、「弁」そのものの形を指定する方法は、対応表を参照してください。 [文脈による字形選択と異体字シーケンス](contextual-forms.md)
@@ -104,3 +106,23 @@ Unicodeでは、「卵」（U+F91C）と「卵」（U+5375）など、別の文�
 バージョン2.000の収録漢字11,810字のうち、一点明朝正字 v1.1にも同じ文字コードがある10,983件について、文字と字形を対応させるフォント内の表（`cmap`）から比較対象を選びました。二次曲線を三次曲線に変換し、1 emを1,000単位とする座標に換算して、丸めの差を0.02単位まで許容しました。 [一点明朝正字 v1.1](https://github.com/epistularum/kanji-restoration/releases/tag/v1.1)
 
 一点明朝正字 v1.1に同じ文字コードがない827件は、検証を経て、既存字形の利用または作字で補完しました。そのうち「𪮮」（U+2ABAE）は「撠」、「𣟗」（U+237D7）は「㰘」と同じ形で表示します。各字の来歴と新たに描いた字形のデータは、配布ZIPの `編集資料/漢字の割り当て.json` と `編集資料/作字/` にあります。 [漢字の収録範囲](coverage.md)
+
+## 次版で確定した字形
+
+次版の開発で確定した字形のうち、一点明朝正字の同じ符号位置、または正準対応先にある字形と異なるものを掲載します。表に正準対応先を示した組は、両方の文字コードを収録し、同じ既定字形で表示します。「採用字形」の字は、輪郭を参照した先を示します。 [一点明朝正字 v1.1 の字形選定基準](https://github.com/epistularum/kanji-restoration/blob/v1.1/README.md#正字-criteria)・[Unicode正規化仕様](https://www.unicode.org/reports/tr15/#Respecting_Canonical_Equivalence)
+
+| 入力字 | 正準対応先 | 採用字形 | 根拠 |
+| --- | --- | --- | --- |
+| 䙜（`U+465C`） | — | 𥛝 | 『漢語大字典』3313頁は衣偏の形を訛字とし、『玉篇』の示偏の形を挙げます。『十二支考』の神名「泰䙜」も『山海經』の「泰𥛝」に当たります。 [漢語大字典](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=3313)・[十二支考](https://www.aozora.gr.jp/cards/000093/files/526_28258.html) |
+| 䞇（`U+4787`） | — | 贄 | 『漢語大詞典』は䞇を贄と同字とし、宋刊本『資治通鑑』には同一人物の「陸䞇」「陸贄」が見えます。 [漢語大詞典と用例](https://www.shidianguji.com/character/%E4%9E%87) |
+| 峀（`U+2F879`） | 峀（`U+5CC0`） | 岫 | 台湾原字の山＋由は岫の異体です。山＋田の形は別字の邦の古字に当たります。部品の配置差を本文用の形に統一する基準を適用し、推薦形體表の山偏＋由を採用しました。 [字源分離の資料](https://www.unicode.org/wg2/docs/n5259-IRGN2676Disunify5CC0.pdf)・[推薦形體表28頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/table_of_recom_inherited_glyphs-1.04.pdf#page=29) |
+| 𢆃（`U+2F889`） | 𢆃（`U+22183`） | 𢅼 | 『正字通』は𢆃を𢅼の俗字とします。『說文解字』が示す巾と声符の夒から成る𢅼を採用しました。 [漢語大字典871頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=871)・[說文解字・巾部](https://ctext.org/shuo-wen-jie-zi/jin-bu1/zh) |
+| 㤜（`U+2F8A2`） | 㤜（`U+391C`） | 怴 | 『康熙字典』は㤜と怴を別項とします。『漢語大字典』は㤜を怴の訛字とし、同書所引の阮元校勘記は『公羊傳』の㤜を怴と校訂して、声符を戉と明記します。この校訂に基づき、忄＋戉を採用しました。 [康熙字典・怴](https://zh.wikisource.org/wiki/康熙字典/心部/五畫)・[漢語大字典2457頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=2457)・[阮元校勘記](https://www.donglishuzhai.net/chapter/10702.html) |
+| 㩬（`U+2F8C7`） | 㩬（`U+3A6C`） | 𢹍 | 『正字通』は打つ義の𢹍に対し、㩬を訛字とします。一点明朝正字の戱・戲の選定と同じく、右側は虍の下に豆を置く戲です。 [康熙字典・㩬](https://ctext.org/kangxi-zidian/64/16/zh)・[一点明朝正字の選定表](https://github.com/epistularum/kanji-restoration/blob/aa3004083e6304854425fe971ec6f9f43a03f9c1/seiji.tsv#L13201) |
+| 𣲼（`U+2F8FB`） | 𣲼（`U+23CBC`） | 厬 | 『集韻』は脇から出る泉の義で𣲼を厬の異体とします。『說文解字』の厂と声符の晷を含む厬を採用しました。 [異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=55008) |
+| 𣽞（`U+2F910`） | 𣽞（`U+23F5E`） | 厬 | 『集韻』は泉の義で𣽞を厬の異体とし、『正字通』は俗字とします。『說文解字』の厂と声符の晷を含む厬を採用しました。 [異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=55013) |
+| 𥐝（`U+2F94D`） | 𥐝（`U+2541D`） | 𥕐 | 『廣韻』の都歷切は、𥐝を「𥕐磓」の𥕐と同字とします。 [廣韻・都歷切](https://ytenx.org/kyonh/sieux/3676/)・[漢語大字典2587頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=2587) |
+| 𦾱（`U+2F9B0`） | 𦾱（`U+26FB1`） | 摷 | 『正字通』は取る義の𦾱に対し、手部の摷を本来の形とします。『說文解字』の手と声符の巢を含む摷を採用しました。 [異體字字典](https://dict.variants.moe.edu.tw/dictView.jsp?ID=101105)・[說文解字注・摷](https://kanji-database.sourceforge.net/dict/swjz/v23.html) |
+| 𠠄（`U+2F9D9`） | 𠠄（`U+20804`） | 㨄 | 『集韻』の直紹切は、刺す義で𠠄を㨄と同字とします。『周禮』注所引の『詩』にも手偏＋周の表記があります。 [康熙字典・𠠄](https://ctext.org/kangxi-zidian/18/14/zh)・[周禮正義・醢人](https://wk.100ke.info/zh-hant/周禮正義/74) |
+| 𨜮（`U+2F9E5`） | 𨜮（`U+2872E`） | 作字 | 『異體字字典』は同じ形を卿と鄉の双方の異体に挙げます。𨜮の構成を保ち、最上画を檢校表の横画にするため、卿の左端全体を移しました。 [卿の異体欄](https://dict.variants.moe.edu.tw/dictView.jsp?ID=4968)・[鄉の異体欄](https://dict.variants.moe.edu.tw/dictView.jsp?ID=46476)・[檢校表100頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/component_of_recom_inherited_glyphs-1.37.pdf#page=101) |
+| 䦕（`U+2F9EF`） | 䦕（`U+4995`） | 閛 | 『漢語大字典』は門が閉まる音を表す閛の異体に䦕を挙げます。檢校表の全字例に基づき、門の内側は左右に点を持つ平です。 [漢語大字典4376頁](https://ivantsoi.myds.me/web/hydzd/orgpage.html?page=4376)・[檢校表75頁](https://github.com/ichitenfont/inheritedglyphs/blob/master/component_of_recom_inherited_glyphs-1.37.pdf#page=76) |
